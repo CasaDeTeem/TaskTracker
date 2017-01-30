@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EF378DAA1E3C3BC700F4B017 /* WorkTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF378DA91E3C3BC700F4B017 /* WorkTicket.swift */; };
+		EF378DAC1E3E443600F4B017 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF378DAB1E3E443600F4B017 /* ConfirmationViewController.swift */; };
+		EF378DAE1E3E470D00F4B017 /* MachineTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF378DAD1E3E470D00F4B017 /* MachineTableTableViewController.swift */; };
 		EFB0B2841E33B60E00BA6CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB0B2831E33B60E00BA6CAF /* AppDelegate.swift */; };
 		EFB0B2861E33B60E00BA6CAF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB0B2851E33B60E00BA6CAF /* FirstViewController.swift */; };
 		EFB0B2881E33B60E00BA6CAF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB0B2871E33B60E00BA6CAF /* SecondViewController.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		EF378DA91E3C3BC700F4B017 /* WorkTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTicket.swift; sourceTree = "<group>"; };
+		EF378DAB1E3E443600F4B017 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		EF378DAD1E3E470D00F4B017 /* MachineTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineTableTableViewController.swift; sourceTree = "<group>"; };
 		EFB0B2801E33B60E00BA6CAF /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB0B2831E33B60E00BA6CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB0B2851E33B60E00BA6CAF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -87,10 +91,12 @@
 				EFB0B2851E33B60E00BA6CAF /* FirstViewController.swift */,
 				EFB0B2871E33B60E00BA6CAF /* SecondViewController.swift */,
 				EFB0B2891E33B60E00BA6CAF /* Main.storyboard */,
+				EF378DAB1E3E443600F4B017 /* ConfirmationViewController.swift */,
 				EFB0B28C1E33B60E00BA6CAF /* Assets.xcassets */,
 				EFB0B28E1E33B60E00BA6CAF /* LaunchScreen.storyboard */,
 				EFB0B2911E33B60E00BA6CAF /* Info.plist */,
 				EFB0B2A51E340A7600BA6CAF /* TechnicianTableViewController.swift */,
+				EF378DAD1E3E470D00F4B017 /* MachineTableTableViewController.swift */,
 				EF378DA91E3C3BC700F4B017 /* WorkTicket.swift */,
 			);
 			path = TaskTracker;
@@ -210,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF378DAE1E3E470D00F4B017 /* MachineTableTableViewController.swift in Sources */,
+				EF378DAC1E3E443600F4B017 /* ConfirmationViewController.swift in Sources */,
 				EFB0B2881E33B60E00BA6CAF /* SecondViewController.swift in Sources */,
 				EFB0B2841E33B60E00BA6CAF /* AppDelegate.swift in Sources */,
 				EFB0B2861E33B60E00BA6CAF /* FirstViewController.swift in Sources */,

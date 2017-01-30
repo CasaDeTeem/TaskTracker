@@ -9,8 +9,8 @@
 import UIKit
 
 // protocol used for sending data back
-protocol DataEnteredDelegate: class {
-    func userDidEnterInformation(info: String)
+protocol ItemSelectedDelegate: class {
+    func userDidSelectItem(info: String)
 }
 
 class TechnicianTableViewController: UITableViewController {
@@ -18,12 +18,16 @@ class TechnicianTableViewController: UITableViewController {
     //MARK: Properties
     
     var selectedTechnician: String?
+
     
+    
+    // MARK: - Table view data source
+    // Revisit:  Get this data from plist or web service?
     let technicians = ["Johnson, Mike", "Le Nueve, Monique", "Clinton, Bill", "Kudlow, Lauren", "Smith, Tim"]
     
     
     // making this a weak variable so that it won't create a strong reference cycle
-    weak var delegate: DataEnteredDelegate? = nil
+    weak var delegate: ItemSelectedDelegate? = nil
     
 //    @IBOutlet weak var textField: UITextField!
 //    
@@ -53,8 +57,6 @@ class TechnicianTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -86,7 +88,7 @@ class TechnicianTableViewController: UITableViewController {
         print(selection)
 
         // call this method on whichever class implements our delegate protocol
-        delegate?.userDidEnterInformation(info: selection)
+        delegate?.userDidSelectItem(info: selection)
         
         
         // go back to the previous view controller

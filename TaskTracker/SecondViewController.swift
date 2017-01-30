@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UITableViewController, DataEnteredDelegate {
+class SecondViewController: UITableViewController, ItemSelectedDelegate {
     
     //will rename this view controller...it's responsible for creating the workticket
     
@@ -51,7 +51,7 @@ class SecondViewController: UITableViewController, DataEnteredDelegate {
         }
     }
     
-    func userDidEnterInformation(info: String) {
+    func userDidSelectItem(info: String) {
         print("yes!")
         technicianLabel.text = info
         ticket.technician = info
